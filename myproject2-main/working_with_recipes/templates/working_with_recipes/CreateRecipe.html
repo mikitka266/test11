@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content%}
+    <div class="CreateRecipe Container">
+        <div class="CRForm">
+            <h2>Сreate a new recipe</h2>
+            <form  method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="form-style {% if field.errors %} errors {% endif %}">
+                        {{ field.label_tag }}
+                        {{ field.errors }}
+                        {{ field}}
+                    </div>
+                {% endfor %}
+                <button type="submit"><p>Send...</p></button>
+            </form>
+        </div>
+        <div class="CRFTable">
+            <h2>List of recipes</h2>
+            <table>
+                <thead><th>Name</th><th>Action</th></thead>
+                {% for recipee in recipe %}
+                <tr>
+                    <td><a href="One_recipe/{{recipee.id}}">{{ recipee.name }}</a></td>
+                    <td><a href="edit_recipe/{{recipee.id}}">Change</a> | <a href="delete_recipe/{{recipee.id}}">Delete</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,900 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+
+.Container{
+    width: 1550px;
+}
+
+.Header {
+    background-color:#222222;
+}
+
+.HeaderInfo {
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 240px 10px 231px;
+}
+
+.HeaderInfo a {
+    color:#222222;
+}
+
+.HeaderInfoLeft {
+    width: 450px;
+    gap: 41px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.HeaderInfoLeft p {
+    padding: 5px 25px 5px 25px;
+}
+
+.HeaderInfoRight p {
+    padding: 5px 25px 5px 25px;
+}
+
+.HeaderInfoRight {
+    gap: 33px;
+    display: flex;
+    width: 450px;
+    position: relative;
+}
+
+.login_logout {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Header_buttons {
+    background-color: #F16D7F;
+    cursor: pointer;
+}
+
+
+.CARDS {
+    width: 1550px;
+    background-color: hsl(0, 0%, 26%);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    gap: 60px;
+}
+
+.CARD {
+    width: 400px;
+    height: 100%;
+    border: 10px double #F16D7F;
+    box-shadow: 5px 20px 50px  #F16D7F;
+    background-color: #222222;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+}
+
+.CARD a {
+    margin-top: 30px;
+    color: #ffb4be;
+    padding: 5px 25px 5px 25px;
+}
+
+.CARD a:visited {
+    color: #ffb4be;
+}
+
+.CARD a:active {
+    color: red;
+}
+
+.CARD p {
+    margin-top: 30px;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.One_recipe {
+    background-color: hsl(0, 0%, 26%);
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stick {
+    width: 7px;
+    height: 250px;
+    background-color: #F16D7F;
+    }
+
+.ONE_CARD {
+    width: 1000px;
+    height: 500px;
+    border: 10px double #F16D7F;
+    box-shadow: 2px 25px 50px   #F16D7F;
+    border-radius: 10px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.ONE_CARD img {
+    width: 400px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+
+.ONE_CARD p{
+    margin-top: 5px;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+    text-align: center;
+}
+
+.ONE_CARD a{
+    margin-top: 5px;
+    color: #ffb4be;
+    padding: 5px 25px 5px 25px;
+}
+
+.ONE_CARD a:active{
+    margin-top: 5px;
+    color: red;
+    padding: 5px 25px 5px 25px;
+}
+
+.ONE_CARD h1{
+    margin-top: 5px;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+    text-align: center;
+}
+
+.CreateRecipe {
+    display: flex;
+    background-color: hsl(0, 0%, 26%);
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 350px;
+}
+
+.CRForm {
+    height: 450px;
+    border: 10px double #F16D7F;
+    box-shadow: 2px 25px 50px   #F16D7F;
+    background-color: #222222;
+    flex-direction: column;
+    border-radius: 15px;
+    gap: 60px;
+}
+
+.CRForm h2 {
+    margin-top: 15px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.CRForm button {
+    background-color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 65%;
+}
+
+.CRForm button p {
+    color: #222222;
+}
+
+.form-style {
+    margin-top: 15px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.CRFTable {
+    overflow-y:scroll;
+    height: 450px;
+    border: 10px double #F16D7F;
+    box-shadow: 2px 25px 50px   #F16D7F;
+    background-color: #222222;
+    border-radius: 15px;
+}
+
+.CRFTable h2 {
+    margin-top: 15px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.CRFTable th {
+    margin-top: 15px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.CRFTable td {
+    margin-top: 15px;
+    text-align: center;
+    color: #ffb4be;
+    padding: 5px 25px 5px 25px;
+
+}
+
+.CRFTable a {
+    margin-top: 30px;
+    color: #ffb4be;;
+    padding: 5px 5px 5px 5px;
+}
+
+.CRFTable a:visited {
+    color: #ffb4be;;
+}
+
+.CRFTable a:active {
+    color: red;
+}
+
+.CreateRecipeEdit {
+    display: flex;
+    background-color: hsl(0, 0%, 26%);
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.CREForm {
+    height: 500px;
+    width: 500px;
+    border: 10px double #F16D7F;
+    box-shadow: 2px 25px 50px   #F16D7F;
+    background-color: #222222;
+    border-radius: 15px;
+}
+
+.CREForm h2 {
+    margin-top: 15px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.CREForm button {
+    background-color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 70%;
+}
+
+.DeleteRecipe {
+    display: flex;
+    background-color: hsl(0, 0%, 26%);
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.DeleteRecipe form {
+    height: 250px;
+    width: 700px;
+    border: 10px double #F16D7F;
+    box-shadow: 2px 25px 50px   #F16D7F;
+    background-color: #222222;
+    border-radius: 15px;
+}
+
+.DeleteRecipe h2 {
+    margin-top: 35px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.DeleteRecipe p {
+    margin-top: 25px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.form-buttons a {
+    margin-top: 30px;
+    color: #ffb4be;;
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+}
+
+.form-buttons input {
+    background-color: #222222;
+    color: #ffb4be;;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.Log_in {
+    display: flex;
+    background-color: hsl(0, 0%, 26%);
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.LGIForm {
+    width: 800px;
+    height: 350px;
+    border: 10px double #F16D7F;
+    box-shadow: 2px 25px 50px   #F16D7F;
+    background-color: #222222;
+    border-radius: 25px;
+}
+
+.LGIForm h2 {
+    margin-top: 35px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.LGIForm form p{
+    margin-top: 10px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+    font-size: 20px;
+}
+
+.LGIForm form button{
+    margin-top:30px;
+    height: 40px;
+    width: 150px;
+    background-color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+    margin-bottom: 15px;
+    margin-left: 70%;
+}
+
+.LOG_REG_BUTTON {
+    height: 40px;
+    width: 150px;
+    background-color: #F16D7F;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 70%;
+}
+
+.LOG_REG_BUTTON p{
+    margin-top: 10px;
+    color: #222222;
+    padding: 0px 25px 5px 25px;
+    text-align: center;
+}
+
+.registration {
+    display: flex;
+    background-color: hsl(0, 0%, 26%);
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.REGForm {
+    width: 950px;
+    height: 500px;
+    border: 10px double #F16D7F;
+    box-shadow: 2px 25px 50px   #F16D7F;
+    background-color: #222222;
+    border-radius: 25px;
+}
+
+.REGForm form {
+    display: flex;
+    gap: 200px;
+}
+
+.REGForm button {
+    height: 40px;
+    width: 150px;
+    background-color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.REGForm a {
+    color:  #222222;
+}
+
+.REGFORM-FORM button{
+    margin-top:30px;
+    height: 40px;
+    width: 150px;
+    background-color: #F16D7F;
+    color:  #222222;
+    padding: 5px 25px 5px 25px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+.REGForm h2 {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+}
+
+.REGForm form p{
+    margin-top: 10px;
+    color: #F16D7F;
+    padding: 5px 25px 5px 25px;
+    font-size: 20px;
+}
+
+.REGFORM-P {
+    width: 350px;
+}
+
+.REGFORM-P h2 {
+    margin-top: 10px;
+    margin-right: 30%;
+    margin-bottom: 0px;
+    color: #F16D7F;
+    text-align: right;
+    padding: 5px 25px 5px 25px;
+}
+
+
+.footer {
+    display: flex;
+    gap: 655px;
+    margin: 0 auto;
+    height: 79px;
+    align-items: center;
+    justify-content: center;
+    background: #222222;
+}
+
+.footer p {
+    font-family: 'Lato-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.Footer_imgs {
+    display: flex;
+    gap: 7px;
+}
+
+.Footer_imgs svg{
+    cursor: pointer;
+}
+
+.footer div {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.BrowseAllProduct:hover {
+    background-color: #F26376;
+}
+
+.BrowseAllProduct:hover p {
+    color: #FFFFFF;
+}
+
+.Footer_imgs div:hover {
+    background-color: #F16D7F;
+}
+
+.Footer_imgs svg:hover {
+    fill: #FFFFFF;
+}
+
+
+
+@media (max-width: 768px) {
+    .Container {
+        margin: 0 auto;
+        width: 736px;
+    }
+
+
+    .HeaderInfoRight {
+        gap: 25px;
+    }
+
+    .Num_Products {
+        right: 15px;
+
+    }
+
+    .Header {
+        width: 768px;
+    }
+
+    .HeaderInfo {
+        padding: 18px 32px 18px 32px;
+    }
+
+    .HeaderInfoLeft {
+        align-items: center;
+    }
+
+    .HeaderInfoLeft img {
+        width: 44px;
+        height: 38px;
+    }
+
+    .imgheaderlupa {
+        width: 29px;
+        height: 29px;
+    }
+
+    .HeaderInfoLeft button {
+        width: 26px;
+        height: 27px;
+    }
+
+    .MainLogoInfo {
+        width: 768px;
+    }
+
+    .MainLogoInfo img {
+        width: 386px;
+        height: 386px;
+    }
+
+    .menu-close img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .MainLogoInfoRight h2 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .MainLogoInfoRight h3 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .MainLogoInfo {
+        gap: 39px;
+    }
+
+    .MainLogoInfoRight {
+        gap: 16px;
+    }
+
+    .elements {
+        width: 232px;
+        height: 168px;
+    }
+
+    .elem1 {
+        width: 232px;
+        height: 168px;
+    }
+
+    .elem2 {
+        width: 232px;
+        height: 168px;
+    }
+
+    .elem3 {
+        width: 232px;
+        height: 168px;
+    }
+
+    .elem4 {
+        width: 735px;
+        height: 116px;
+        margin-top: 12px;
+    }
+
+    .elem4 button {
+        width: 735px;
+        height: 116px;
+    }
+
+    .Menu {
+        width: 736px;
+        gap: 20px;
+    }
+
+    .Products {
+        width: 768px;
+    }
+
+    .HeaderProducts {
+        width: 768px;
+    }
+
+    .MenuProducts {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .additional_advantages {
+        width: 768px;
+        height: 610px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .additional_advantages__items {
+        width: 719px;
+        height: 610px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .item1 {
+        margin-top: 40px;
+    }
+
+    .item2 {
+        margin-top: 40px;
+    }
+
+    .item3 {
+        margin-top: 40px;
+    }
+
+    .START_OF_REGISTRATION {
+        width: 768px;
+        height: 693px;
+        background-image: url(../IMG_2/FOTO_REGISTRATION_TA.png);
+    }
+
+    .START_OF_REGISTRATION_background {
+        background: rgba(244, 244, 244, 0.7);
+        width: 768px;
+        height: 693px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .BUTTON_REGISTRATION {
+        margin-bottom: 140px;
+    }
+
+    .footer {
+        gap: 305px;
+        width: 768px;
+    }
+}
+
+@media (max-width: 375px) {
+    .Container {
+        width: 343px;
+    }
+
+    .HIR__button_1 {
+        position: absolute;
+        top: 9px;
+        right: 2px;
+    }
+
+    .HIR__button_2 {
+        position: absolute;
+        left: -999999999;
+        visibility: hidden;
+    }
+
+    .HIR__button_3 {
+        position: absolute;
+        left: -999999999;
+        visibility: hidden;
+    }
+
+    .Num_Products {
+        position: absolute;
+        left: -999999999;
+        visibility: hidden;
+    }
+
+    .Header {
+        width: 375px;
+    }
+
+    .MainLogoInfo {
+        width: 375px;
+    }
+
+    .MainLogoInfo img {
+        position: absolute;
+        left: -999999999;
+        visibility: hidden;
+    }
+
+    .menu-active__all {
+        position: relative;
+    }
+
+    .menu-close img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: auto;
+        visibility: visible;
+    }
+
+    .MainLogoInfo {
+        width: 375px;
+        height: 363px;
+        justify-content: center;
+    }
+
+    .MainLogoInfoRight {
+        gap: 15px;
+    }
+
+    .MainLogoInfoRight h2 {
+        font-size: 38px;
+        line-height: 45.5px;
+    }
+
+    .MainLogoInfoRight h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .stick {
+        width: 12px;
+        height: 66px;
+    }
+
+    .MainMenu {
+        justify-content: center;
+        width: 375px;
+    }
+
+    .Menu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        width: 375px;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .elements {
+        width: 343px;
+        height: 248px;
+        border: none;
+        background: rgba(33, 22, 22, 0.7);
+    }
+
+    .elem1 {
+        width: 343px;
+        height: 248px;
+    }
+
+    .elem2 {
+        width: 343px;
+        height: 248px;
+    }
+
+    .elem3 {
+        width: 343px;
+        height: 248px;
+    }
+
+    .elem4 {
+        width: 344px;
+        height: 111px;
+    }
+
+    .elem4 button {
+        width: 344px;
+        height: 111px;
+    }
+
+    .Products {
+        width: 375px;
+    }
+
+    .HeaderProducts {
+        width: 375px;
+    }
+
+    .MenuProducts {
+        margin-top: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .elements2 {
+        width: 359px;
+    }
+
+    .additional_advantages {
+        width: 375px;
+    }
+
+
+    .additional_advantages__items {
+        width: 375px;
+        gap: 10px;
+    }
+
+
+    .START_OF_REGISTRATION {
+        width: 375px;
+        height: 550px;
+        background-image: url(../IMG_2/FOTO_REGISTRATIO_PHONE.png);
+    }
+
+    .START_OF_REGISTRATION_background {
+        width: 375px;
+        height: 550px;
+        gap: 59px;
+    }
+
+    .BUTTON_REGISTRATION {
+        margin-bottom: 109px;
+    }
+
+    .FACE_INFO {
+        margin-top: 64px;
+    }
+
+    .REGISTRATION {
+        width: 341px;
+    }
+
+    .REGISTRATION h3 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .footer {
+        gap: 40px;
+        height: 143px;
+        width: 375px;
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .footer img {
+        margin-top: 0px;
+    }
+}

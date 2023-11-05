@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="registration Container">
+        <div class="REGForm">
+            <h2>Register</h2>
+            <form method="post">
+                <div class="REGFORM-FORM">
+                    {% csrf_token %}
+                    {% for f in form %}
+                        <p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+                        <div class="form-error">{{ f.errors }}</div>
+                    {% endfor %}
+                    <button type="submit">Register</button>
+                </div>
+                <div class="REGFORM-P">
+                    <h2>Note</h2>
+                    <p>Пароль не должен быть слишком похож на другую вашу личную информацию.
+                    Ваш пароль должен содержать как минимум 8 символов.
+                    Пароль не должен быть слишком простым и распространенным.
+                    Пароль не может состоять только из цифр.</p>
+                </div>
+            </form>
+            <button><a href="/log_in"><p>Log in</p></a></button>
+        </div>
+    </div>
+{% endblock %}
+
